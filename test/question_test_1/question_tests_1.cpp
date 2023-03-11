@@ -8,5 +8,6 @@ TEST_CASE("Verify Test Configuration", "verification") {
 
 TEST_CASE("test")
 {
-	REQUIRE(test_config() == true);
+	REQUIRE(get_dna_p_distance("GAGCCTACTAACGGGAT", "CATCGTAATGACGGCCT") == .4118);
+	REQUIRE(get_dna_p_distance("GAGCCTACTAACGGGAT", "GATCGTAATGACGGCCT") == .3529);
 }
